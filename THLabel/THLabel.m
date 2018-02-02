@@ -107,7 +107,7 @@
 		return CGSizeZero;
 	}
 	
-	CGRect textRect;
+	CGRect textRect = CGRectZero;
 	CTFrameRef frameRef = [self frameRefFromSize:CGSizeMake(self.preferredMaxLayoutWidth, CGFLOAT_MAX) textRectOutput:&textRect];
 	CFRelease(frameRef);
 	
